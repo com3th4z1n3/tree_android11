@@ -5,23 +5,24 @@
 /vbmeta_system_ext     emmc     /dev/block/by-name/vbmeta_system_ext     flags=display=vbmeta_system_ext;slotselect;backup=1;flashimg=1
 /dtbo                  emmc     /dev/block/by-name/dtbo                  flags=display=dtbo;slotselect;backup=1;flashimg=1
 /boot                  emmc     /dev/block/by-name/boot                  flags=display=boot;slotselect;backup=1;flashimg=1
-/system                ext4     system                                   flags=display=system;logical;slotselect;backup=1;flashimg=1;wipeingui
-/system_image          emmc      /dev/block/mapper/system_a                       flags=display="System";backup=1;flashimg=1
-/system_ext            ext4     system_ext                               flags=display=system_ext;logical;slotselect;backup=1;flashimg=1;wipeingui
-/system_ext_image          emmc      /dev/block/mapper/system_ext_a                   flags=display="System_ext";backup=1;flashimg=1
-/vendor                ext4     vendor                                   flags=display=vendor;logical;slotselect;backup=1;flashimg=1;wipeingui
-/vendor_image          emmc      /dev/block/mapper/vendor_a                       flags=display="Vendor";backup=1;flashimg=1
-/product               ext4     product                                  flags=display=product;logical;slotselect;backup=1;flashimg=1;wipeingui
-/product_image          emmc      /dev/block/mapper/product_a                      flags=display="Product";backup=1;flashimg=1
+/persist               emmc     /dev/block/by-name/persist               flags=display=persist;backup=1;flashimg=1
+/system_image          emmc     /dev/block/mapper/system_a               flags=display="System_a";backup=1;flashimg=1
+/system_ext_image      emmc     /dev/block/mapper/system_ext_a           flags=display="System_ext_a";backup=1;flashimg=1
+/vendor_image          emmc     /dev/block/mapper/vendor_a               flags=display="Vendor_a";backup=1;flashimg=1
+/product_image         emmc     /dev/block/mapper/product_a              flags=display="Product_a";backup=1;flashimg=1
+/system                ext4     system                                   flags=display=system;logical;slotselect;backup=1;flashimg=1
+/system_ext            ext4     system_ext                               flags=display=system_ext;logical;slotselect;backup=1;flashimg=1
+/vendor                ext4     vendor                                   flags=display=vendor;logical;slotselect;backup=1;flashimg=1
+/product               ext4     product                                  flags=display=product;logical;slotselect;backup=1;flashimg=1
 /metadata              ext4     /dev/block/by-name/metadata              flags=display=metadata;backup=1;flashimg=1
 /data                  f2fs     /dev/block/by-name/userdata              flags=display=data;backup=1;flashimg=1
 
 #
 #SD cards
-/external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card 1";storage;wipeingui;removable
-/external_sd    vfat        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card 2";storage;wipeingui;removable
-/external_sd	auto		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card 3";storage;wipeingui;removable
-/external_sd    auto        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card 4";storage;wipeingui;removable
+/external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card";storage;wipeingui;removable
+/external_sd    vfat        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card";storage;wipeingui;removable
+/external_sd	auto		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card";storage;wipeingui;removable
+/external_sd    auto        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card";storage;wipeingui;removable
 
 #OTG
 /usb-otg	auto		/dev/block/sdf1	/dev/block/sdf		  flags=display="USB-OTG 1";backup=0
