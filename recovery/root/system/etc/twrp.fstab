@@ -2,14 +2,14 @@
 # For Motorola G20
 
 # <mount_point>      <fstype>  <device>        <device2>                  <flags>
-/system_image          emmc      /dev/block/mapper/system_a                       flags=display="System image";backup=1;flashimg=1
-/system          ext4     /dev/block/mapper/system_a                       flags=display="System";wipeingui
-/vendor_image          emmc      /dev/block/mapper/vendor_a                       flags=display="Vendor image";backup=1;flashimg=1
-/vendor          ext4      /dev/block/mapper/vendor_a                       flags=display="Vendor";wipeingui
-/product_image          emmc      /dev/block/mapper/product_a                      flags=display="Product image";backup=1;flashimg=1
-/product          ext4      /dev/block/mapper/product_a                      flags=display="Product";wipeingui
-/system_ext_image          emmc      /dev/block/mapper/system_ext_a                   flags=display="System_ext image";backup=1;flashimg=1
-/system_ext          ext4      /dev/block/mapper/system_ext_a                   flags=display="System_ext";wipeingui
+/system          ext4     /dev/block/mapper/system_a                       flags=display="System";logical;slotselect;wipeingui
+/system_image    emmc     /dev/block/mapper/system_a                       flags=display="System Image";logical;slotselect;flashimg=1
+/vendor          ext4     /dev/block/mapper/vendor_a                       flags=display="Vendor";logical;slotselect;wipeingui
+/vendor_image    emmc     /dev/block/mapper/vendor_a                       flags=display="Vendor Image";logical;slotselect;flashimg=1
+/product         ext4     /dev/block/mapper/product_a                      flags=display="Product";logical;slotselect;wipeingui
+/product_image   emmc     /dev/block/mapper/product_a                      flags=display="Product Image";logical;slotselect;flashimg=1
+/system_ext      ext4     /dev/block/mapper/system_ext_a                   flags=display="System_ext";logical;slotselect;wipeingui
+/system_ext_image emmc    /dev/block/mapper/system_ext_a                   flags=display="System_ext Image";logical;slotselect;flashimg=1
 /super          emmc      /dev/block/by-name/super                   flags=display="Super image";backup=1;flashimg=1
 /vbmeta                emmc     /dev/block/by-name/vbmeta                flags=display=vbmeta;slotselect;backup=1;flashimg=1
 /vbmeta_system         emmc     /dev/block/by-name/vbmeta_system         flags=display=vbmeta_system;slotselect;backup=1
