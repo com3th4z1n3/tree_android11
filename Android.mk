@@ -13,7 +13,6 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libkeymaster
 LOCAL_SRC_FILES := /system/lib64/libkeymaster_portable.so  # Ganti dengan file sumber yang sesuai
-LOCAL_SHARED_LIBRARIES := libcrypto
 include $(BUILD_SHARED_LIBRARY)
 
 endif
