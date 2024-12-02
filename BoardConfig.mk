@@ -132,6 +132,7 @@ TW_THEME := portrait_hdpi
 TW_NO_HAPTICS := true
 TW_INCLUDE_FASTBOOTD := true
 TW_INCLUDE_FASTBOOT := true
+TW_INCLUDE_BOOTCONTROL := false
 
 # Crypto
 TW_INCLUDE_CRYPTO               := true
