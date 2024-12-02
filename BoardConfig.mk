@@ -148,3 +148,7 @@ TW_INCLUDE_REPACKTOOLS := true
 # For debugging
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# LIb ultils
+TARGET_RECOVERY_DEVICE_MODULES := libcrypto libkeymaster libgptutils libdm libfbe_metadata_decrypt
+
