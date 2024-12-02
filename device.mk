@@ -52,3 +52,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.device \
     ro.product.name
+
+BOARD_RECOVERY_DEVICE_MODULES := \
+    libcrypto \
+    libkeymaster \
+    libgptutils \
+    libdm \
+    libfbe_metadata_decrypt
